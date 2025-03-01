@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Tuomas Takoja Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Alempana oleva nav class toteuttaa nettisivun navigointipalkin. Navbar-expang-lg tekee
+  navbarista responsiivisen. Div class="container", jotta sivulla on oikeat välit ja linjaukset.
+  Justify-content-center on Bootstrap 5 toiminto/luokka(class), joka keskittää navigointipalkin linkit.-->
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+         <!-- Ilman <div>, <span> tai <a>, linkit olisivat hieman enemmän ruudun oikealla puolella, rikkoen sivun kokonaisuutta.-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Etusivu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Yleisesti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Yhteystiedot</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid"> <!-- Container-fluid luo täyspituisen laatikon. -->
+
+    <div class="blur"><img class="image" src="flowers.png" alt="Flowers"></div> <!-- Kuva, joka on laitettu omaan diviin, jotta diville ja sen sisällä olevalle kuvalle voi tarkemmin tyylitellä. -->
+
+    <div class="blur-text1">
+        <img class="cv" src="CV_kuva.jpg" width="35%" height="35%"> <!-- CV-kuva tuodaan HTML:n kautta sivulle, sekin on laitettu omaan diviin, jotta eri tyylejä on helppo muokata. -->
+    </div>
+    
+    <div class="blur-text2">   
+        <h1 class="bt1">Tervetuloa!</h1>
+        <p class="bt2">Tuomas Takoja</p>
+        <p class="bt3">IT-tradenomiopiskelija</p> <!-- Teksti, jolle on asetettu läpinäkyvä tausta. -->
+    </div>
+
+</div>
+
+
+
+<div>
+<footer class="footer">
+    <a>Made by Tuomas Takoja</a> <!-- Perinteinen footer, jolle on asetettu Bootstrapin avulla "bg-dark" -luokka, joka antaa footerille tumman värin. -->
+    <a class="footertext">|</a>
+    <a href="index3.html">Contact Me</a>
+</footer>
+</div>
+
+</body>
+
+
+
+</html>
